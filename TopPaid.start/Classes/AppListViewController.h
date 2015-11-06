@@ -1,6 +1,6 @@
 /*
      File: AppListViewController.h 
- Abstract: Controller for the main table view of the LazyTable sample.
+ Abstract: Controller for the main table view of the TopPaid sample.
  This table view controller works off the AppDelege's data model.
  produce a three-stage lazy load:
  1. No data (i.e. an empty table)
@@ -12,7 +12,7 @@
  
  Images are scaled to the desired height.
  If rapid scrolling is in progress, downloads do not begin until scrolling has ended. 
-  Version: 1.0 
+  Version: 1.1 
   
  Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple 
  Inc. ("Apple") in consideration of your agreement to the following 
@@ -52,7 +52,7 @@
  STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE 
  POSSIBILITY OF SUCH DAMAGE. 
   
- Copyright (C) 2010 Apple Inc. All Rights Reserved. 
+ Copyright (C) 2011 Apple Inc. All Rights Reserved. 
   
  */
 

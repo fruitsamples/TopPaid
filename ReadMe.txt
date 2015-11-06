@@ -3,7 +3,7 @@
 ===========================================================================
 DESCRIPTION:
 
-This sample demonstrates how to design and build a universal application capable of running on both the iPhone and iPad.  It shows the steps needed to make an existing iPhone application universal by introducing two unique user interface designs for both devices, yet using the same data model.
+This sample demonstrates how to design and build a universal application capable of running on both the iPhone/iPod touch and iPad.  It shows the steps needed to make an existing iOS application universal by introducing two unique user interface designs for both devices, yet using the same data model.
 
 The sample itself shows a multi-stage approach to loading and displaying a UITableView.  It begins by loading the relevant text from an RSS feed so the table can load as quickly as possible, and then downloads the images for each row asynchronously so the UI is more responsive.
 
@@ -18,7 +18,7 @@ BUILDING YOUR UNIVERSAL APPLICATION:
 When upgrading your application to "universal", you need to take into consideration several things:
 
 ¥ Revisiting your Model-View-Controller structure of your application.
-Since you are supporting two devices, you will have to factor out two separate view designs apart for each device.  This will mean different UI layouts between iPhone and iPad or multiple nibs supporting them.
+Since you are supporting two devices, you will have to factor out two separate view designs apart for each device.  This will mean different UI layouts between iPhone/iPod touch and iPad or multiple nibs supporting them.
 
 ¥ Grouping shared code and resources and then separate out specific iPad and iPhone code and resources.  This is mostly an organizational effort you go through in Xcode to keep things well organized.
 
@@ -26,8 +26,8 @@ Since you are supporting two devices, you will have to factor out two separate v
 
 Xcode Project
 =============================================
-1) Set the base SDK to 3.2
-2) Set the deployment target to 3.1.3 (so it can run on the iPhone 3.1.3)
+1) Set the base SDK to 4.2
+2) Set the deployment target to 3.1.3 (so it can run on the iPhone/iPod touch running iOS 3.1.3)
 3) Set "Target Device Family" to be "iPhone/iPad"
 
 Default Images
@@ -54,14 +54,14 @@ Add new default images for the iPad.  In this sample we use:
 ===========================================================================
 BUILD REQUIREMENTS:
 
-iPhone SDK 3.2
+iPhone SDK 4.2
 
 
 ===========================================================================
 RUNTIME REQUIREMENTS:
 
-iPhone OS 3.2 for iPad
-iPhone OS 3.1.3 for iPhone
+iOS 3.2 for iPad
+iOS 3.1.3 for iPhone/iPod touch
 
 
 ===========================================================================
@@ -110,5 +110,8 @@ CHANGES FROM PREVIOUS VERSIONS:
 Version 1.0
 - First version.
 
+Version 1.1
+- Upgraded to support iOS 4.2 SDK.
+
 ===========================================================================
-Copyright (C) 2010 Apple Inc. All rights reserved.
+Copyright (C) 2010-2011 Apple Inc. All rights reserved.
